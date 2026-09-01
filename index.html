@@ -4,51 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Integritetspolicy – Prospektlista</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+           max-width: 46rem; margin: 2rem auto; padding: 0 1rem;
+           line-height: 1.6; color: #1a1a1a; }
+    h1 { border-bottom: 2px solid #ddd; padding-bottom: .4rem; }
+    h2 { margin-top: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: .5rem; text-align: left;
+             vertical-align: top; font-size: .95rem; }
+    th { background: #f4f4f4; }
+    .uppdaterad { color: #666; font-size: .9rem; }
+  </style>
 </head>
 <body>
   <h1>Integritetspolicy – Prospektlista</h1>
-  <p>Senast uppdaterad: 2026-09-02</p>
+  <p class="uppdaterad">Senast uppdaterad: 2026-09-01</p>
+
+  <h2>Vad gör Prospektlista?</h2>
+  <p>
+    Prospektlista sammanställer en lista över nyregistrerade aktiebolag inom
+    ett avgränsat geografiskt område och levererar den till våra kunder,
+    som är redovisningsbyråer. Ändamålet med behandlingen är
+    <strong>B2B-prospektering</strong>: att hjälpa en redovisningsbyrå hitta
+    och kontakta nystartade bolag som kan behöva deras tjänster.
+  </p>
 
   <h2>Vilka uppgifter behandlar vi?</h2>
   <p>
-    Prospektlista sammanställer namn på styrelseledamot/verkställande
-    direktör för nyregistrerade aktiebolag, hämtat från Bolagsverkets och
-    SCB:s offentliga register, och levererar listan till våra kunder
-    (redovisningsbyråer). Utöver namn och roll behandlas uppgifter om
-    själva bolaget: organisationsnummer, bolagsnamn, SNI-kod (bransch) och
-    registreringsdatum.
+    Om dig som är styrelseledamot eller verkställande direktör i ett
+    nyregistrerat aktiebolag behandlar vi ditt <strong>namn</strong>, din
+    <strong>roll</strong> i bolaget och, i vissa fall, en
+    <strong>e-postadress</strong> (se nedan). Utöver det behandlas uppgifter
+    om själva bolaget: organisationsnummer, bolagsnamn, SNI-kod (bransch)
+    och registreringsdatum.
+  </p>
+
+  <h2>Varifrån kommer uppgifterna?</h2>
+  <p>
+    Namn, roll och bolagsuppgifter kommer från <strong>offentliga
+    register</strong> – i första hand Bolagsverket och SCB. Vi hämtar dem
+    dels direkt, dels via en svensk leverantör som tillhandahåller samma
+    registeruppgifter genom ett API. Vi har alltså inte fått uppgifterna
+    från dig direkt.
   </p>
 
   <h2>E-postadresser</h2>
   <p>
     Listan kan innehålla en e-postadress till kontaktpersonen. Adressen är
-    inte hämtad från något register - den är <strong>konstruerad</strong> av
-    oss utifrån personens namn och bolagets domännamn enligt vanliga
-    adressmönster, och tas bara med om den kunnat bekräftas som giltig hos
-    den mottagande e-postservern. Adresser som inte kunnat bekräftas tas
-    aldrig med.
+    <strong>inte hämtad från något register</strong> – den är konstruerad av
+    oss utifrån ditt namn och bolagets domännamn enligt vanliga
+    adressmönster. En konstruerad adress tas bara med om den kunnat
+    bekräftas som giltig, antingen genom en teknisk kontroll mot mottagande
+    e-postserver eller via en extern verifieringstjänst. Ingen kontroll
+    innebär att något meddelande skickas till adressen. Adresser som inte
+    kunnat bekräftas tas aldrig med.
+  </p>
+  <p>
+    Adressen avser dig i egenskap av företrädare för bolaget och konstrueras
+    alltid mot bolagets egen domän – aldrig mot en privat e-postleverantör.
   </p>
 
   <h2>Vem får del av uppgifterna?</h2>
   <p>
-    Uppgifterna levereras till den redovisningsbyrå som är kund hos oss,
-    i ett Google-kalkylark. Utöver kunden anlitar vi följande
-    tjänsteleverantörer för att kunna framställa listan:
+    Uppgifterna levereras till den redovisningsbyrå som är kund hos oss, i
+    ett delat kalkylark. När kunden tagit emot listan är kunden
+    <strong>självständigt personuppgiftsansvarig</strong> för sin fortsatta
+    behandling – vill du utöva dina rättigheter gentemot kunden får du vända
+    dig direkt till dem, men hör gärna av dig till oss först så hjälper vi
+    dig vidare.
   </p>
-  <ul>
-    <li><strong>Google</strong> (Google Sheets) – lagring och leverans av listan.</li>
-    <li><strong>ABPI.se</strong> – uppslag av kontaktperson utifrån organisationsnummer.</li>
-    <li><strong>ZeroBounce</strong> – kontroll av om en konstruerad e-postadress är giltig.</li>
-  </ul>
+  <p>
+    Kunden får enligt avtal inte sälja, hyra ut eller publicera uppgifterna
+    vidare.
+  </p>
+  <p>
+    Utöver kunden anlitar vi följande kategorier av tjänsteleverantörer.
+    Vill du veta exakt vilka leverantörer det rör sig om lämnar vi den
+    uppgiften på begäran – kontakta oss på adressen längst ned.
+  </p>
+  <table>
+    <tr><th>Kategori av leverantör</th><th>Ändamål</th><th>Uppgifter som delas</th><th>Placering</th></tr>
+    <tr><td>Molntjänst för kalkylark</td><td>Lagring och leverans av listan</td><td>Namn, roll, e-postadress, bolagsuppgifter</td><td>USA</td></tr>
+    <tr><td>Leverantör av företagsinformation</td><td>Uppslag av kontaktperson i offentligt register</td><td>Organisationsnummer (avser bolaget, inte dig som person)</td><td>Sverige</td></tr>
+    <tr><td>Tjänst för e-postverifiering</td><td>Kontroll av om en konstruerad adress finns</td><td>Enbart e-postadressen</td><td>USA</td></tr>
+  </table>
 
   <h2>Överföring utanför EU/EES</h2>
   <p>
-    Google och ZeroBounce är amerikanska leverantörer, vilket innebär att
-    uppgifter kan komma att behandlas i USA. Sådan överföring sker med stöd
-    av EU-kommissionens beslut om adekvat skyddsnivå för USA
-    (EU-US Data Privacy Framework) och/eller EU-kommissionens
-    standardavtalsklausuler. Vi använder enbart den minsta mängd uppgifter
-    som krävs för respektive ändamål.
+    Två av leverantörerna ovan är amerikanska, vilket innebär att uppgifter
+    kan komma att behandlas i USA. Båda är registrerade deltagare i
+    <strong>EU-U.S. Data Privacy Framework</strong> – det ramverk som
+    EU-kommissionen beslutat ger en adekvat skyddsnivå – och vi har
+    personuppgiftsbiträdesavtal med båda, innehållande EU-kommissionens
+    standardavtalsklausuler som ytterligare skyddsåtgärd.
+  </p>
+  <p>
+    Vi delar enbart de uppgifter som krävs för respektive ändamål. Till
+    e-postverifieringen skickas exempelvis bara själva adressen – inte ditt
+    namn, din roll eller några bolagsuppgifter.
+  </p>
+
+  <h2>Rättslig grund</h2>
+  <p>
+    Behandlingen sker med stöd av <strong>berättigat intresse</strong>
+    (GDPR artikel 6.1 f). Vi har gjort en dokumenterad intresseavvägning
+    där vi vägt vårt intresse mot ditt intresse av att uppgifterna inte
+    behandlas. Vill du ta del av den lämnar vi ut den på begäran –
+    kontakta oss på adressen längst ned.
+  </p>
+
+  <h2>Automatiserat beslutsfattande</h2>
+  <p>
+    Vi använder inte automatiserat beslutsfattande eller profilering enligt
+    artikel 22. Listan sammanställs maskinellt, men inga beslut som får
+    rättsliga följder eller på liknande sätt i betydande grad påverkar dig
+    fattas automatiskt.
+  </p>
+
+  <h2>Hur länge sparas uppgifterna?</h2>
+  <p>
+    Personuppgifter i kundens leveranslista raderas automatiskt efter
+    <strong>13 månader</strong>. Tiden är fast och gäller lika för alla
+    kunder – den går inte att förlänga per kund.
+  </p>
+  <p>
+    Utöver det för vi en intern förteckning över vilka organisationsnummer
+    som redan levererats, så att samma bolag inte skickas till en kund två
+    gånger. Den förteckningen innehåller enbart uppgifter om juridiska
+    personer (organisationsnummer och datum), inte personuppgifter, och
+    saknar därför tidsgräns.
+  </p>
+  <p>
+    Har du invänt mot behandlingen sparas ditt organisationsnummer i vår
+    spärrlista tills vidare – det är nödvändigt för att invändningen ska
+    fortsätta respekteras vid framtida körningar.
   </p>
 
   <h2>Varför informerar vi inte varje registrerad person direkt?</h2>
@@ -61,26 +151,12 @@
     integritetspolicyn öppet i stället.
   </p>
 
-  <h2>Rättslig grund</h2>
-  <p>
-    Behandlingen sker med stöd av berättigat intresse (GDPR artikel 6.1 f).
-    Se vår fullständiga intresseavvägning:
-    <a href="intresseavvagning.md">intresseavvagning.md</a>.
-  </p>
-
-  <h2>Hur länge sparas uppgifterna?</h2>
-  <p>
-    Uppgifter raderas automatiskt efter 13 månader via vår
-    dataminimeringsrutin. Den här tiden är fast och gäller lika för alla
-    kunder - den går inte att förlänga per kund.
-  </p>
-
   <h2>Din rätt att invända</h2>
   <p>
     Du har rätt att invända mot behandlingen (artikel 21). Kontakta oss på
     <a href="mailto:kontakt.prospektlista@gmail.com">kontakt.prospektlista@gmail.com</a>
     med ditt organisationsnummer, så läggs det till i vår spärrlista och
-    exkluderas från framtida leveranser.
+    exkluderas från framtida leveranser till samtliga kunder.
   </p>
 
   <h2>Dina övriga rättigheter</h2>
@@ -91,7 +167,8 @@
     uppgifter (artikel 16), <strong>radering</strong> (artikel 17),
     <strong>begränsning</strong> av behandlingen (artikel 18) och
     <strong>dataportabilitet</strong> (artikel 20). Kontakta oss på adressen
-    ovan, så hanterar vi din begäran utan onödigt dröjsmål.
+    ovan, så hanterar vi din begäran utan onödigt dröjsmål och senast inom
+    en månad.
   </p>
 
   <h2>Klagomål till tillsynsmyndighet</h2>
@@ -109,7 +186,7 @@
   </p>
   <p>
     Prospektlista drivs för närvarande av en privatperson, inte ett
-    aktiebolag - inget organisationsnummer eller postadress att ange här.
+    aktiebolag – inget organisationsnummer eller postadress att ange här.
     Personuppgiftsansvarig är den fysiska personen ovan, inte en juridisk
     person, och nås via e-postadressen ovan.
   </p>

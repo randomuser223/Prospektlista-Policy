@@ -34,8 +34,7 @@
   <p>
     Om dig som är styrelseledamot eller verkställande direktör i ett
     nyregistrerat aktiebolag behandlar vi ditt <strong>namn</strong> och din
-    <strong>roll</strong> i bolaget, bolagets <strong>postadress</strong>
-    (se nedan) och i framtiden eventuellt ett <strong>telefonnummer</strong>
+    <strong>roll</strong> i bolaget samt bolagets <strong>postadress</strong>
     (se nedan). Utöver det behandlas uppgifter om själva bolaget:
     organisationsnummer, bolagsnamn, SNI-kod (bransch) och
     registreringsdatum.
@@ -50,17 +49,6 @@
     från dig direkt.
   </p>
 
-  <!--
-    OBS (2026-09-12): e-postadresser behandlades tidigare (konstruerade
-    och verifierade adresser till kontaktpersonen), men det avsnittet är
-    borttaget här eftersom behandlingen har upphört helt - kunden skickar
-    numera brev till bolagets adress i stället. Träffsäkerheten
-    motiverade varken arbetet eller GDPR-hanteringen i längden. Skulle
-    e-postspåret återupptas i framtiden behöver ett nytt avsnitt
-    publiceras HÄR, före leverans (samma princip som telefonnummer-
-    avsnittet nedan).
-  -->
-
   <h2>Postadress</h2>
   <p>
     Listan innehåller bolagets registrerade postadress (gatuadress,
@@ -73,36 +61,6 @@
     är företrädarens egen bostadsadress. Vi behandlar den därför som en
     personuppgift om dig, med samma rättigheter för dig som övriga
     uppgifter på den här sidan.
-  </p>
-
-  <!--
-    OBS (2026-09-05): telefonnummer är ännu INTE i drift. Avsnittet är
-    skrivet i förväg så att informationen finns publicerad INNAN första
-    leveransen med telefonnummer sker (GDPR art. 14). Att publicera det i
-    förtid är ofarligt - det beskriver en behandling som ännu inte skett.
-    Blir telefonspåret aldrig av ska avsnittet och raden om tele- och
-    adressdata i leverantörstabellen tas bort igen. Se
-    docs/intresseavvagning.md, avsnittet "Telefonnummer (kategori 3)".
-  -->
-  <h2>Telefonnummer</h2>
-  <p>
-    Listan kan innehålla ett telefonnummer till bolaget. Numret är
-    <strong>inte konstruerat av oss</strong> – det är inköpt från en
-    leverantör av tele- och adressdata, som i sin tur hämtar det från
-    teleoperatörernas nummerupplysning, alltså uppgifter som abonnenten
-    själv låtit publicera.
-  </p>
-  <p>
-    Vi är medvetna om att numret till ett nystartat bolag i praktiken ofta är
-    företrädarens eget mobilnummer. Vi behandlar det därför som en
-    personuppgift om dig, med samma rättigheter för dig som övriga uppgifter
-    – även när det står i en kolumn som heter "telefon" och avser bolaget.
-  </p>
-  <p>
-    Numret hämtas genom uppslag på bolagets organisationsnummer. Kan
-    leverantören inte matcha med säkerhet lämnas fältet tomt – vi levererar
-    aldrig ett nummer som bara sannolikt tillhör rätt bolag. Nummer
-    kontrolleras mot NIX-spärregistret innan de levereras.
   </p>
 
   <h2>Vem får del av uppgifterna?</h2>
@@ -125,9 +83,8 @@
   </p>
   <table>
     <tr><th>Kategori av leverantör</th><th>Ändamål</th><th>Uppgifter som delas</th><th>Placering</th></tr>
-    <tr><td>Molntjänst för kalkylark</td><td>Lagring och leverans av listan</td><td>Namn, roll, postadress, telefonnummer, bolagsuppgifter</td><td>USA</td></tr>
+    <tr><td>Molntjänst för kalkylark</td><td>Lagring och leverans av listan</td><td>Namn, roll, postadress, bolagsuppgifter</td><td>USA</td></tr>
     <tr><td>Leverantör av företagsinformation</td><td>Uppslag av kontaktperson i offentligt register</td><td>Organisationsnummer (avser bolaget, inte dig som person)</td><td>Sverige</td></tr>
-    <tr><td>Leverantör av tele- och adressdata</td><td>Uppslag av telefonnummer till bolaget</td><td>Organisationsnummer (avser bolaget, inte dig som person)</td><td>Sverige</td></tr>
   </table>
 
   <h2>Överföring utanför EU/EES</h2>
